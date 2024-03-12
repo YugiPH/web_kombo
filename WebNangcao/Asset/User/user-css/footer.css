@@ -1,0 +1,60 @@
+footer{
+    margin-top: 0;
+    background-color: #333;
+    float: left;
+    width: 100%;
+    min-height: 150px;
+    color: #fff;
+}
+
+.row{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box-center{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    width: 13%;
+    margin-right: 2%;
+}
+
+.contact-info{
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+}
+
+.customer-support,
+.get-our{
+    float: left;
+    width: 28%;
+    margin-right: 2%;
+}
+
+.logo img {
+    margin: 50px 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.support a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.support a:hover{
+    text-decoration: underline;
+    color:rgb(65, 65, 233);
+}
+
+.support,
+.address p {
+    margin-bottom: 15px;
+}

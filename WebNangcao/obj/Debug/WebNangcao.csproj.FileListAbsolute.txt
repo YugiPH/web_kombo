@@ -1,0 +1,130 @@
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\WebNangcao.dll.config
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\WebNangcao.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\WebNangcao.pdb
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csc.exe
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csc.exe.config
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csc.rsp
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csi.exe
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csi.exe.config
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\csi.rsp
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Managed.Core.targets
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Collections.Immutable.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Reflection.Metadata.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\vbc.exe
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\vbc.exe.config
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\vbc.rsp
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\VBCSCompiler.exe
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\VBCSCompiler.exe.config
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Antlr3.Runtime.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\EntityFramework.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\EntityFramework.SqlServer.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Microsoft.Web.Infrastructure.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Newtonsoft.Json.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Helpers.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Mvc.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Optimization.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Razor.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.Deployment.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.Razor.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\WebGrease.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\EntityFramework.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\EntityFramework.SqlServer.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Helpers.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Mvc.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Optimization.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.Razor.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.Deployment.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\System.Web.WebPages.Razor.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Newtonsoft.Json.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Antlr3.Runtime.pdb
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.AssemblyReference.cache
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.CoreCompileInputs.cache
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.CopyComplete
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\obj\Debug\WebNangcao.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\obj\Debug\WebNangcao.pdb
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Buffers.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Memory.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Numerics.Vectors.dll
+D:\o E\Nâng cao web\WebNangcao\WebNangcao\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\WebNangcao.dll.config
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\WebNangcao.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\WebNangcao.pdb
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csc.exe
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csc.exe.config
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csc.rsp
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csi.exe
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csi.exe.config
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\csi.rsp
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.Managed.Core.targets
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Buffers.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Collections.Immutable.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Memory.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Numerics.Vectors.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Reflection.Metadata.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\vbc.exe
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\vbc.exe.config
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\vbc.rsp
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\VBCSCompiler.exe
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\roslyn\VBCSCompiler.exe.config
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Antlr3.Runtime.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\EntityFramework.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\EntityFramework.SqlServer.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Microsoft.Web.Infrastructure.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Newtonsoft.Json.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Helpers.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Mvc.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Optimization.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Razor.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.Deployment.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.Razor.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\WebGrease.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\EntityFramework.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\EntityFramework.SqlServer.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Newtonsoft.Json.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Helpers.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Mvc.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Razor.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.Deployment.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.WebPages.Razor.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\System.Web.Optimization.xml
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\bin\Antlr3.Runtime.pdb
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.AssemblyReference.cache
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.CoreCompileInputs.cache
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\obj\Debug\WebNangcao.csproj.CopyComplete
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\obj\Debug\WebNangcao.dll
+D:\o E\kombo\komboo\WebNangcao\WebNangcao\obj\Debug\WebNangcao.pdb

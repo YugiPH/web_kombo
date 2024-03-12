@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @RenderSection("style", required: false)
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div id="header-wrapper">
+            <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+                <div class="logo-container">
+                    <a href="#" title="Cơm Niêu Singapore KOMBO - Hệ thống nhà hàng Cơm Niêu Singapore số 1 Việt Nam" rel="home">
+                        <img width="230" height="70" src="https://kombo.vn/medias/2022/11/logo.gif" class="header-logo" />
+                    </a>
+                </div>
+
+                <div class="flex-col hide-medium flex-left flex-grow">
+                    <ul class="main-nav nav nav-left nav-medium nav-uppercase">
+                        <li id="menu-item">
+                            <a href="/Home/About" class="nav-link">Về Kombo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Tin Tức</a>
+                        </li>
+                        <li><a href="/Home/Index" class="nav-link">Thực đơn</a></li>
+                        <li>
+                            <a href="#" class="nav-link">Hệ thống nhà hàng</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">Nhượng quyền</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex-col hide-medium flex-right">
+                    <ul class="main-nav ">
+                        <li class="header-block">
+                            <div class="img has-hover">
+                                <a href="#">
+                                    <div class="img-inner dark">
+                                        <img width="230" height="70" src="https://kombo.vn/medias/2022/11/delivery.gif" class="attachment-original size-original" alt="" loading="lazy" />
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+    </div>
+
+        <footer style="background-color:#b30000 !important ;overflow:hidden">
+            <div class="row">  
+                    <div class="contact-info">
+                        <div style="display:flex;align-items:flex-start;flex-direction:column ">
+                            <div class="logo">
+                                <a href="trangchu.html"><img width="50" height="50" src="https://kombo.vn/medias/2022/09/footer-logo-kombo.png"></a>
+                                <div>
+                                    <p style="font-weight: bold; color: white; margin-left:20px">
+                                        CÔNG TY CỔ PHẦN KOMBO
+                                    </p>
+                                    <p style="font-weight: bold; color: white; margin-left:20px ">Hệ thống cơm niêu Singapore số 1 Việt Nam</p>
+                                </div>
+                            </div>
+                        <div class="address" >
+                            <div class="add">
+                                <i class="fa-solid fa-location-arrow fa-beat-fade"></i><p>Địa chỉ: 262 Nguyễn Huy Tưởng - Thanh Xuân - Hà Nội</p>
+                            </div>
+                            <div class="add">
+                                <i class="fa-solid fa-phone fa-bounce"></i><p>
+                                    Hotline:
+                                    097 161 5775
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customer-support">
+                        <p style="font-weight:bold;color:white">THÔNG TIN </p>
+                        <div class="support"><a href="">Trang chủ </a></div>
+                        <div class="support"><a href="">Về Kombo</a></div>
+                        <div class="support"><a href="">Tin tức</a></div>
+                        <div class="support"><a href="">Liên hệ</a></div>
+
+                    </div>
+                    <div class="get-our">
+                        <p style="font-weight:bold;color:white">
+                            THÔNG TIN LIÊN HỆ
+
+                        </p>
+                        <div class="support"><a href="">CSKH: (+84) 97 161 5775 </a></div>
+                        <div class="support"><a href="">Nhượng quyền: (+84) 963 266 551</a></div>
+                        <div class="support"><a href="">Email: kombo.vietnam@gmail.com</a></div>
+                        <div class="support"><a href="">Website: www.kombo.vn</a></div>
+                        <div class="support"><a href="">Facebook: fb.com/kombo.vn</a></div>
+                    </div>
+                    <div class="ion-network">
+                        <p style="font-weight:bold;color:white;text-transform:uppercase">
+                            Các nền tảng khác
+                            <div class="support"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/results?search_query=C%C6%A0M+NI%C3%8AU+SINGAPORE">Youtube</a> </div>
+                            <div class="support"><i class="fa-brands fa-tiktok"></i><a href="https://www.tiktok.com/search?q=kombo%20comnieusingapore&t=1700885026602">Tiktok</a></div>
+                            <div class="support"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/explore/locations/1432467493464148/cm-nieu-singapore-kombo/">Instagram</a></div>
+                            <div class="support"><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/search?q=C%C6%A0M%20NI%C3%8AU%20SINGAPORE%20&src=recent_search_click&f=top">Twitter</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+
+</html>
+@RenderSection("style", required: false)
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #header-wrapper {
+        z-index: 10;
+        position: fixed;
+        height: 70px;
+        background-color: #ffffff;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0px 4px 30px rgb(20 32 43 / 12%);
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+        .nav-link:hover {
+            color: #ff0000;
+        }
+
+        .nav-link:focus {
+            color: #ff0000;
+        }
+
+    .main-nav li {
+        margin: 0 5px;
+    }
+
+    .logo-container {
+        margin-right: 10px;
+    }
+
+    .header-block {
+        margin-left: 10px;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin:10px;
+    }
+    .support a  {
+        color:white;    
+    }
+    .logo{
+        display:flex;
+        margin:10px
+    }
+    .add p {
+        color:white;
+        margin-bottom:0;
+        padding:4px
+    }
+    .add {
+        display:flex;
+        align-items:center; 
+    }
+    .ion-network a{
+        margin-left:7px;
+    }
+    .ion-network .support {
+        display:flex;
+        align-items:center
+    }
+</style>    

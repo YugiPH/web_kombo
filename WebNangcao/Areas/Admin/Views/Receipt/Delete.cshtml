@@ -1,0 +1,113 @@
+﻿@model WebNangcao.Models.HoaDon
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <h1>
+        Danh mục
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Danh mục</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li class="active">Xóa sản phẩm</li>
+    </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- SELECT2 EXAMPLE -->
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h2 class="box-title">Xóa sản phẩm</h2>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+            <div class="tab-content">
+                <div>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.NgayBan)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NgayBan)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Thue)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Thue)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.TongTien)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TongTien)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DiaChi)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.DiaChi)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MoTa)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MoTa)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ChiTietHD.Id)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.ChiTietHD.Id)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.KhachHang.TenKH)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.KhachHang.TenKH)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-default" /> |
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    }
+                </div>
+
+        </div><!-- /.tab-content -->
+    </div>
+    </div>
+</section><!-- /.content -->
+
+<style>
+    .dl-horizontal dt {
+        border: 2px;
+        padding: 10px;
+        text-align: initial;
+    }
+
+    dd {
+        padding-top: 10px;
+    }
+</style>

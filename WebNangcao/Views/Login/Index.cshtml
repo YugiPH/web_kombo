@@ -1,0 +1,126 @@
+﻿@model WebNangcao.Models.KhachHang
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+              rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+              rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+              rel="stylesheet" />
+        <!-- MDB -->
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <!-- Section: Design Block -->
+            <section class="background-radial-gradient overflow-hidden">
+                <style>
+
+                    .background-radial-gradient {
+                        background-color: hsl(218, 41%, 15%);
+                       /* background-image: url('https://cdn-www.vinid.net/2020/02/20200214_AppVinID_BannerWeb_Kombo.jpg');*/
+                        background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    body {
+                        height: 100vh;
+                        margin: 0;
+                    }
+
+                    .card {
+                        width: 100%;
+                        max-width: 400px; 
+                        margin: auto;
+                    }
+
+                    .card-body {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+
+                    }
+                    .bg-glass {
+                        background-color: hsla(0, 0%, 100%, 0.9) !important;
+                        backdrop-filter: saturate(200%) blur(25px);
+                    }
+                    .form-control {
+                        border-bottom: 2px solid #ddd; 
+                        border-radius: 5px; 
+                        padding: 5px; 
+                        width: 100%; 
+                        padding-left: 0;
+                        /*border: 2px;*/
+                       
+                    }
+                    
+                </style>
+
+                <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+                    <div class="row gx-lg-5 align-items-center mb-5">
+
+                        <div class="card bg-glass">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <form class="login" method="post" action="@Url.Action("Index","Login")">
+                                    
+                                    <h2 style="text-align:center;margin-bottom:10px">Login</h2>
+                                    @using (Html.BeginForm())
+                                    {
+                                        <!-- Email input -->
+                                    <div class="mb-4">
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control"@*, @placeholder = "Email" *@})
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="mb-4">
+                                        @Html.PasswordFor(m => m.Pass, new { @class = "form-control"@*, @placeholder = "Pass" *@})
+                                        @Html.ValidationMessageFor(m => m.Pass, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                                        Sign up
+                                    </button>
+
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                        <p>or sign up with:</p>
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-google"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </button>
+
+                                        <button type="button" class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                    </div>
+                                    }
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Section: Design Block -->
+        </div>
+    </body>
+</html>

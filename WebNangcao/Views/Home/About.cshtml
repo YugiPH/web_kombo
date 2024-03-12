@@ -1,0 +1,181 @@
+﻿
+    @{
+        ViewBag.Title = "About";
+        Layout = "~/Views/Shared/_UserLayout.cshtml";
+    }
+
+
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link id="callCss" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="screen">
+    </head>
+
+    <body>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top:100px">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://kombo.vn/medias/2022/10/KOMBO-giao-hang-tan-noi-2048x854.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://kombo.vn/medias/2022/10/KOMBO-nha-dong-hanh-dinh-duong-hoa-hau-du-lich-viet-nam-2022-2048x854.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://kombo.vn/medias/2022/10/KOMBO-moi-nhan-nhuong-quyen-thuong-hieu-1.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div style="height:100px; display:flex;justify-content:space-around;align-content:center">
+            <div class="note-kombo">
+                <img width="40" height="40" src="https://kombo.vn/medias/2022/10/3-1-300x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://kombo.vn/medias/2022/10/3-1-300x300.png 300w, https://kombo.vn/medias/2022/10/3-1-150x150.png 150w, https://kombo.vn/medias/2022/10/3-1-100x100.png 100w, https://kombo.vn/medias/2022/10/3-1.png 512w" sizes="(max-width: 300px) 100vw, 300px">
+                <p>Cơm Niêu Singapore Độc Đáo</p>
+            </div>
+
+            <div class="note-kombo">
+                <img width="40" height="40" src="https://kombo.vn/medias/2022/10/2-2-300x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://kombo.vn/medias/2022/10/2-2-300x300.png 300w, https://kombo.vn/medias/2022/10/2-2-150x150.png 150w, https://kombo.vn/medias/2022/10/2-2-100x100.png 100w, https://kombo.vn/medias/2022/10/2-2.png 512w" sizes="(max-width: 300px) 100vw, 300px">
+                <p>Không gian hiện đại</p>
+            </div>
+
+
+            <div class="note-kombo">
+                <img width="40" height="40" src="https://kombo.vn/medias/2022/10/1-2-300x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://kombo.vn/medias/2022/10/1-2-300x300.png 300w, https://kombo.vn/medias/2022/10/1-2-150x150.png 150w, https://kombo.vn/medias/2022/10/1-2-100x100.png 100w, https://kombo.vn/medias/2022/10/1-2.png 512w" sizes="(max-width: 300px) 100vw, 300px">
+                <p>
+                    Dịch vụ tận tâm
+                </p>
+            </div>
+            <div class="note-kombo">
+                <img width="40" height="40" src="https://kombo.vn/medias/2022/10/4-2-300x300.png" class="attachment-medium size-medium" alt="" loading="lazy" srcset="https://kombo.vn/medias/2022/10/4-2-300x300.png 300w, https://kombo.vn/medias/2022/10/4-2-150x150.png 150w, https://kombo.vn/medias/2022/10/4-2-100x100.png 100w, https://kombo.vn/medias/2022/10/4-2.png 512w" sizes="(max-width: 300px) 100vw, 300px">
+                <p>Hỗ trợ nhanh chóng</p>
+            </div>
+        </div>
+
+        <div class="products-list flex-row medium-flex-wrap">
+            <div class="row bot0">
+                <div class="col letter-partner-content small-12 large-12" width="80%">
+                    <div class="col-inner">
+                        <div class="text title">
+                            <p>
+                                <span style="font-size: 14px; font-family: 'arial black', sans-serif; color: #ed1c24;">From KOMBO with Love</span><br>
+                            </p>
+                        </div>
+                        <div class="text desc">
+                            <p style="text-align:left;font-size:16px ">KOMBO luôn nỗ lực không ngừng để mang những niêu cơm Singapore độc đáo, ngon miệng và đầy đủ dinh dưỡng đến với mọi thực khách trên khắp Việt Nam, đặt mục tiêu vươn xa hơn và sẽ là một doanh nghiệp dịch vụ F&amp;B do người Việt sáng lập có đủ sức cạnh tranh với các thương hiệu quốc tế</p>
+                        </div>
+                        <div style="text-align:right">
+                            <p style="font-family: 'Dancing Script', cursive !important;">Ông Nguyễn Phương Nam</p>
+                        </div>
+                        <div style="text-align:right">
+                            <p style="font-family: 'Dancing Script', cursive !important;"><span style="font-size: 24px; font-family: 'arial black', sans-serif; color: #000000;">CEO</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-content relative">
+            <div style="display:flex;justify-content:center;margin:20px;font-weight:bolder"><span class="section-title-main" style="color: #be1d2d;text-align:center;font-size:24px">Cơm Niêu Singapore Độc Đáo</span></div>
+            <div class="products-list flex-row medium-flex-wrap">
+                @{
+                    List<WebNangcao.Models.SanPham> sameProduct = (List<WebNangcao.Models.SanPham>)ViewBag.sameProduct;
+                    for (int i = 0; i < sameProduct.Count; i++)
+                    {
+
+                        <div class="product-boxwrap">
+                            <div class="product-box">
+                                <div class="box-image">
+                                    <a href="/Home/Detail/@sameProduct[i].Id">
+                                        <img src="@Url.Content(@sameProduct[i].Anh)" alt="Image" class="card-img-top" style="height: 200px; width:300px" ;>
+                                    </a>
+                                </div>
+                                <div class="products-info">
+                                    <p style="font-size: 20px; color:#be1d2d;">@sameProduct[i].TenSP</p>
+                                    <span>Giá:@Html.FormatValue(@sameProduct[i].DonGia, "{0:#,###}")₫</span>
+                                    <div class="count">
+                                        <button type="submit" class="single_add_to_cart_button button alt" onclick="window.location.href='/Cart/Cart/@sameProduct[i].Id'">Chi tiết</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    }
+                }
+            </div >
+            <div style="display:flex;justify-content:center;margin:20px">
+                <a href="/Home/Index" target="_self" class="button primary home-viewmore">
+                    <img src="https://kombo.vn/wp-content/themes/kombo/assets/img/readmore.png"/>
+                </a>
+            </div>
+        </div>
+    </body>
+
+    <style>
+        .note-kombo{
+            display:flex;
+            align-items:center;
+        }
+        .note-kombo p{
+            font-weight:bold;
+            margin-bottom:0;
+            margin-left:7px;
+        }
+        .col {
+            background-image: url("https://kombo.vn/medias/2022/11/2.jpg");
+            display: flex;
+            margin: 0 88px 0 88px
+
+        }
+        .product-boxwrap{
+            display:flex;
+            flex-wrap:wrap;
+            width:40%;
+        
+        }
+        .product-box{
+            display:flex;
+            padding:10px;
+            box-sizing:border-box
+
+        }
+        .products-info{
+            display:flex;
+            flex-direction:column;
+
+            margin-left:20px;
+        }
+        .count button {
+            padding: 8px 12px;
+            border: 1px solid #9D0B0E;
+            border-radius: 3px;
+            background-color: #9D0B0E;
+            color: #fff;
+            cursor: pointer;
+            flex:content;
+        }
+
+            .count button:hover {
+                background-color: #fff;
+                color: #9D0B0E;
+            }
+        .products-list{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-around
+        }
+    </style>
+
+

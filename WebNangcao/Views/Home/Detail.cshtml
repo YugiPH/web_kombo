@@ -1,0 +1,481 @@
+﻿@model WebNangcao.Models.SanPham
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Asset/Image/">
+    <title>
+        Welcome to FlatShop
+    </title>
+</head>
+<body>
+    <style>
+        .navigate {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: 80px;
+            padding: 10px;
+        }
+
+        .product-detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: normal;
+            flex: 1;
+            width: 100%;
+        }
+
+        .pro-image {
+            width: 40%;
+            height: auto;
+        }
+
+            .pro-image img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        .progress-bar-info {
+            width: 50%;
+            padding: 0 20px 0 20px;
+        }
+
+        .pro-price {
+            border-width: 5px;
+        }
+
+            .pro-price p {
+                margin: 10px
+            }
+
+        .progress-bar-info p {
+            margin: 10px;
+        }
+
+        .progress-bar-info h3 {
+            margin: 0 0 15px 10px;
+            color: #9D0B0E;
+        }
+
+        .new_price {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .light-red {
+            border-color: red;
+            border-width: 5px;
+        }
+
+        .product-box {
+            flex: 1;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .product-box .box-image {
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                max-width: 100%;
+            }
+
+        .products-info p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .products-info span {
+            font-size: 16px;
+            color: #9D0B0E;
+            display: block;
+        }
+
+        .products-info a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+            .products-info a:hover {
+                color: #9D0B0E;
+            }
+
+        .products-info .count {
+            display: flex;
+            justify-content: center;
+        }
+
+        .count {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+            .count .input-val {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+
+            .count input {
+                margin: 0;
+                padding: 8px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .count button {
+                padding: 8px 12px;
+                border: 1px solid #9D0B0E;
+                border-radius: 3px;
+                background-color: #9D0B0E;
+                color: #fff;
+                cursor: pointer;
+            }
+
+                .count button:hover {
+                    background-color: #fff;
+                    color: #9D0B0E;
+                }
+
+        .tab-content {
+            display: none;
+        }
+
+            .tab-content.active {
+                display: block;
+            }
+
+        /* Add styling for tabs */
+        #tabnav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        #tabnav li {
+            margin-right: 10px;
+        }
+
+        #tabnav a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+
+            #tabnav a:hover {
+                background-color: #ddd;
+            }
+
+        #tabnav li.active a,
+        #Descraption:target,
+        #Reviews:target {
+            background-color: #ddd;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 10px;
+        }
+
+        #Descraption:target,
+        #Reviews:target {
+            display: block;
+        }
+
+        #prev_hot,
+        #next_hot {
+            cursor: pointer;
+        }
+
+        .product-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .product-box {
+            flex: 0 0 auto;
+            margin: 0 10px;
+        }
+
+        #hot {
+            display: flex;
+            overflow-x: auto;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .product-boxwrap {
+            flex: 0 0 auto;
+            width: 25%; /* Set the width to 25% for four products in a row */
+        }
+
+        .product-box {
+            box-sizing: border-box;
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
+
+        .product-slide {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0 20px 0;
+        }
+    </style>
+    <div class="wrapper-body flex-row medium-flex-wrap container">
+        <div class="navigate">
+            <i style="margin:10px" class="fa-solid fa-house"></i><a href="#">Trang chủ</a>
+            <i style="margin:10px" class="fa-solid fa-chevron-right"></i><a href="#">Thực đơn</a>
+            <i style="margin:10px" class="fa-solid fa-chevron-right"></i><a href="#">CƠM NIÊU SINGAPORE </a>
+            <i style="margin:10px" class="fa-solid fa-chevron-right"></i><a href="#">CƠM NIÊU SƯỜN NƯỚNG </a>
+        </div>
+        <div class="main flex-row medium-flex-wrap">
+            <div class="product-detail">
+                <div class="pro-image">
+                    <img src="@Model.Anh" alt="Product Image" />
+                </div>
+
+                <div class="progress-bar-info">
+                    <h3>@Model.TenSP</h3>
+                    <span style="margin:10px; margin-bottom:10px;">
+                        <img alt="" src="~/Asset/User/star.png">
+                        <a class="review_num" href="#">
+                            02 Review(s)
+                        </a>
+                    </span>
+                    <p>Những miếng sườn non được tẩm kĩ lưỡng, hòa quyện cùng nước sốt độc đáo của Kombo làm nên món Cơm niêu Sườn Nướng đắm lòng thực khách.</p>
+                    <hr style="border:2px;margin:15px 0 15px 0" />
+                    <div class="pro-price">
+
+                        <p>
+                            Giá:
+                            <span class="new_price">
+                                @Html.FormatValue(@Model.DonGia, "{0:#,###}")<sup>₫</sup>
+                            </span>
+                        </p>
+                    </div>
+                    <hr style="border:2px;margin:15px 0 15px 0" />
+                    <div class="count">
+                        <div class="input-val">
+                            <button class="minus button is-form">-</button>
+                            <input min="1" max="" name="quantity" value="1" />
+                            <button class="plus button is-form">+</button>
+                        </div>
+                        <button type="submit" class="single_add_to_cart_button button alt" onclick="window.location.href='/Cart/Cart/@Model.Id'">Thêm vào giỏ</button>
+                    </div>
+                    <hr style="border:2px;margin:15px 0 15px 0" />
+                    <div style="margin-top:20px ">
+                        <p>Mã:N/A</p>
+                        <p>Danh mục:<a href="#">@Model.DanhMuc.TenDanhMuc</a></p>
+                        <p>Từ khóa : <a href=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border:2px;margin:15px 0 15px 0" />
+
+    <div class="wrapper-body flex-row medium-flex-wrap container">
+        <div class="tab-box">
+            <div id="tabnav">
+                <ul>
+                    <li>
+                        <a href="#Descraption">
+                            DESCRIPTION
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Reviews">
+                            REVIEW
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content-wrap">
+                <div class="tab-content" id="Descraption">
+                    <p>
+                        Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibu um ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae...
+                    </p>
+                    <p>
+                        Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibu um ante ipsum primis in faucibus orci luctus et ultri ces posuere cubilia curae Aenean eleifend laoreet congue. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc...
+                    </p>
+                </div>
+                <div class="tab-content" id="Reviews">
+                    <div class="review">
+                        <p class="rating">
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star-half-o gray">
+                            </i>
+                            <i class="fa fa-star-o gray">
+                            </i>
+                        </p>
+                        <h5 class="reviewer">
+                            Reviewer name
+                        </h5>
+                        <p class="review-date">
+                            Date: 01-01-2014
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <p class="rating">
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star light-red">
+                            </i>
+                            <i class="fa fa-star-half-o gray">
+                            </i>
+                            <i class="fa fa-star-o gray">
+                            </i>
+                        </p>
+                        <h5 class="reviewer">
+                            Reviewer name
+                        </h5>
+                        <p class="review-date">
+                            Date: 01-01-2014
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a eros neque. In sapien est, malesuada non interdum id, cursus vel neque.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-body flex-row medium-flex-wrap container">
+        <div class="products-list flex-row medium-flex-wrap">
+            <div id="productsDetails" class="hot-products">
+                <h3 class="title">
+                    Sản phẩm tương tự
+                </h3>
+                        <div class="product-slide">
+                            <div class="row">
+                                @{
+                                    List<WebNangcao.Models.SanPham> sameProduct = (List<WebNangcao.Models.SanPham>)ViewBag.sameProduct;
+                                    for (int i = 0; i < sameProduct.Count; i++)
+                                    {
+
+                                        <div class="product-boxwrap">
+                                            <div class="product-box">
+                                                <div class="box-image">
+                                                    <a href="/Home/Detail/@sameProduct[i].Id">
+                                                        <img src="@Url.Content(@sameProduct[i].Anh)" alt="Image" class="card-img-top" style="height: 200px; object-fit: cover;">
+                                                    </a>
+                                                </div>
+                                                <div class="products-info">
+                                                    <p>@sameProduct[i].TenSP</p>
+                                                    <span>Giá:@Html.FormatValue(@sameProduct[i].DonGia, "{0:#,###}")₫</span>
+                                                </div>
+                                                <div class="count">
+                                                    <button type="submit" class="single_add_to_cart_button button alt" onclick="window.location.href='~/Views/Home/'">Thêm vào giỏ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                }
+
+                            </div>
+                        </div>
+                   
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var inputElement = document.querySelector('.input-val input');
+        var plusButton = document.querySelector('.input-val .plus');
+        var minusButton = document.querySelector('.input-val .minus');
+        var addToCartButton = document.querySelector('.single_add_to_cart_button');
+
+        // Load initial quantity from session (if available)
+        var initialQuantity = parseInt('@Session["quantity"]' || 1);
+        inputElement.value = initialQuantity;
+
+        // Function to update the session and calculate the total price
+        function updateSessionAndTotal() {
+            var quantity = parseInt(inputElement.value);
+            Session["quantity"] = quantity;
+
+           Session["TotalPrice"] = quantity * productPrice;
+
+        }
+
+        // Add event listeners
+        plusButton.addEventListener('click', function () {
+            inputElement.value = parseInt(inputElement.value) + 1;
+            updateSessionAndTotal();
+        });
+
+        minusButton.addEventListener('click', function () {
+            if (parseInt(inputElement.value) > 1) {
+                inputElement.value = parseInt(inputElement.value) - 1;
+                updateSessionAndTotal();
+            }
+        });
+
+        addToCartButton.addEventListener('click', function () {
+            // Update session one more time before navigating to the cart page
+            updateSessionAndTotal();
+            // Add other logic for navigating to the cart page
+            window.location.href = '/Cart/Cart/@Model.Id';
+        });
+    });
+</script>
+
+<script type="text/javascript" src="~/Asset/User/js/jquery-1.10.2.min.js">
+</script>
+<script type="text/javascript" src="~/Asset/User/js/bootstrap.min.js">
+</script>
+<script defer src="js/jquery.flexslider.js">
+</script>
+<script type="text/javascript" src="~/Asset/User/js/jquery.carouFredSel-6.2.1-packed.js">
+</script>
+<script type="text/javascript" src='~/Asset/User/js/jquery.elevatezoom.js'>
+</script>
+<script type="text/javascript" src="~/Asset/User/js/script.min.js">
+</script>
+
